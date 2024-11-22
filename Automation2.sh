@@ -98,6 +98,7 @@ run_file_upload() {
     fi
 }
 
+
 # Run all tests in sequence
 echo "[*] Starting vulnerability scan on $TARGET_URL"
 
@@ -114,3 +115,5 @@ run_html_injection
 run_file_upload
 
 echo "[*] Vulnerability testing completed."
+
+
