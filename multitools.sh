@@ -63,7 +63,6 @@ CVE_LIST=(
     "CVE-2017-18094"
 )
 
-# API endpoint for NVD CVE data
 NVD_API="https://api.nvd.nist.gov/vuln/detail/"
 
 # Function to check CVE details from the NVD API
