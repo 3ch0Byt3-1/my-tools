@@ -1,11 +1,11 @@
 import requests
 
+
 base_url = "https://bytecapsule.io"
 paths = [
     "cgi-bin", "assets", "webmail", "controlpanel", "cpanel", "whm", 
     "~mike", "~jeff", "~masmith", "~rachna", "~greg"
 ]
-
 for path in paths:
     url = f"{base_url}/{path}"
     try:
