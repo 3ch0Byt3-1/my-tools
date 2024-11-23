@@ -1,23 +1,23 @@
 #!/bin/bash
-
+#--------------------------------------------------------------------
 # Get the website domain as input
 read -p "Enter the website URL (e.g., example.com): " website
-
+#--------------------------------------------------------------------
 # Input custom wordlist for XSS
 read -p "Enter the path to your XSS payload wordlist (e.g., xss_wordlist.txt): " xss_wordlist
-
+#--------------------------------------------------------------------
 # Step 1: Subdomain Enumeration with Subfinder, display, and save output to sub1.txt
 echo "[+] Running subdomain enumeration on $website..."
 subfinder -d "$website" | tee sub1.txt
 echo "Subdomains saved to sub1.txt"
-
+#--------------------------------------------------------------------
 # Step 3: Run SQLMap on each subdomain, display, and save output to sql.txt
 echo "[+] Testing SQL Injection on subdomains from sub1.txt..."
 while IFS= read -r domain; do
     sqlmap -u "$domain" --random-agent --batch --forms --threads=5 --level=5 --risk=3 | tee -a sql.txt
 done < sub1.txt
 echo "SQL Injection results saved to sql.txt"
-
+#--------------------------------------------------------------------
 # Step 4: Run Nuclei for vulnerability scanning on each subdomain, display, and save output to nuclei.txt
 echo "[+] Running Nuclei vulnerability scan on subdomains from sub1.txt..."
 nuclei -l sub1.txt -o nuclei.txt | tee -a nuclei.txt
