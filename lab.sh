@@ -22,7 +22,6 @@ sudo apt install -y golang
 export PATH=$PATH:/usr/local/go/bin
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 source ~/.bashrc
-
 # Step 3: Install tools
 install_tool() {
     local tool=$1
