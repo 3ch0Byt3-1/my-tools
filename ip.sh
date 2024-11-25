@@ -11,7 +11,6 @@ if [[ -z "$ip_address" ]]; then
     echo "Error: Unable to resolve domain name"
     exit 1
 fi
-
 # Query ipinfo.io for detailed IP information
 api_token="3c9355c23d88d9"  # Replace with your ipinfo.io API token
 response=$(curl -s "https://ipinfo.io/$ip_address/json?token=$api_token")
