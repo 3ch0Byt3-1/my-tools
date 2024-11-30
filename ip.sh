@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Prompt the user for a website
 read -p "Enter the website URL (e.g., bytecapsule.io): " website
 
