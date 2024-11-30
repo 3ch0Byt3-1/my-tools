@@ -1,6 +1,4 @@
 import requests
-
-
 base_url = "https://bytecapsule.io"
 paths = [
     "cgi-bin", "assets", "webmail", "controlpanel", "cpanel", "whm", 
