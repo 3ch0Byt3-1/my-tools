@@ -5,7 +5,6 @@ shodan_key="R8C45zz370Hvp0prryFmF3bED2AZbZE8"
 virustotal_key="ae781046ae89ddad6cc80608ad71b9995aecd953bf96ce3de12391529d36f78d"
 securitytrails_key="sY2Cq8MTA4BwN7diurC6VM5fpwjyG1DL"
 whois_key="at_pF77rN8RmJJKFU2We1l7rqzlD6h7W"
-
 # Function to perform Shodan scan
 shodan_scan() {
     echo "Performing Shodan scan for $1..."
@@ -13,6 +12,8 @@ shodan_scan() {
     echo -e "\nShodan Results for $1:" 
     echo "$result"
 }
+
+
 
 # Function to perform VirusTotal scan
 virustotal_scan() {
@@ -29,6 +30,9 @@ securitytrails_lookup() {
     echo -e "\nSecurityTrails Results for $1:"
     echo "$result"
 }
+
+
+
 
 # Function to perform Whois lookup
 whois_lookup() {
