@@ -14,7 +14,7 @@ run_hydra() {
     echo "[*] Running Hydra for cPanel brute force..."
     hydra -L $USERLIST -P $PASSLIST $TARGET_URL:2083 http-get
 }
-
+#--------------------------------------------------------------------
 # Function to run Nikto scan for web vulnerabilities
 run_nikto() {
     echo "[*] Running Nikto for common vulnerabilities..."
