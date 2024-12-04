@@ -36,12 +36,12 @@ echo "Final Httpx results saved to last-dir.txt"
 echo "[+] Running Katana on alive domains from alive.txt..."
 katana -l alive.txt -o alivejs.txt | tee alivejs.txt
 echo "Katana results saved to alivejs.txt"
-
+#--------------------------------------------------------------------
 # Step 2: Run Nmap port scan on subdomains in sub1.txt, display, and save output to nmap.txt
 echo "[+] Running port scan on subdomains from sub1.txt..."
 nmap -v -A sub1.txt | tee nmap.txt
 echo "Nmap results saved to nmap.txt"
 
-
+#--------------------------------------------------------------------
 
 echo "All tasks completed."
