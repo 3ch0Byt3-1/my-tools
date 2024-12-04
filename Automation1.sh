@@ -22,7 +22,7 @@ echo "SQL Injection results saved to sql.txt"
 echo "[+] Running Nuclei vulnerability scan on subdomains from sub1.txt..."
 nuclei -l sub1.txt -o nuclei.txt | tee -a nuclei.txt
 echo "Nuclei scan results saved to nuclei.txt"
-
+#--------------------------------------------------------------------
 # Step 5: Use Httpx to check alive subdomains from sub1.txt, display, and save to alive.txt
 echo "[+] Checking for alive subdomains with Httpx..."
 httpx -l sub1.txt -o alive.txt | tee alive.txt
