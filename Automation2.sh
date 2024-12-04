@@ -20,13 +20,13 @@ run_nikto() {
     echo "[*] Running Nikto for common vulnerabilities..."
     nikto -h $TARGET_URL
 }
-
+#--------------------------------------------------------------------
 # Function to run HTTPx for active web probing
 run_httpx() {
     echo "[*] Running HTTPx for active probing..."
     httpx -u $TARGET_URL -t 50 -o httpx_results.txt
 }
-
+#--------------------------------------------------------------------
 # Function to run Katana for modular vulnerability checks
 run_katana() {
     echo "[*] Running Katana for multiple vulnerability checks..."
