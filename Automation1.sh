@@ -31,7 +31,7 @@ echo "Alive subdomains saved to alive.txt"
 echo "[+] Running Httpx on alive domains from alive.txt..."
 httpx -l alive.txt -o last-dir.txt | tee last-dir.txt
 echo "Final Httpx results saved to last-dir.txt"
-
+#--------------------------------------------------------------------
 # Step 6: Run Katana on alive domains from alive.txt, display, and save to alivejs.txt
 echo "[+] Running Katana on alive domains from alive.txt..."
 katana -l alive.txt -o alivejs.txt | tee alivejs.txt
