@@ -1,8 +1,8 @@
 #!/bin/bash
-
+#--------------------------------------------------------------------
 # Define the target URL
 TARGET_URL="https://bytecapsule.io"
-
+#--------------------------------------------------------------------
 # Wordlist and filenames
 USERLIST="user.txt"
 PASSLIST="rockyou.txt"
