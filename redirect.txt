@@ -1,2 +1,3 @@
 curl -i https://bytecapsule.io/redirect?url=https://example.com
 curl -v "https://bytecapsule.io/redirect?url=https://example.com"
+
