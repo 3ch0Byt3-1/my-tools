@@ -6,6 +6,7 @@ from email.mime.multipart import MIMEMultipart
 import ssl
 import socket
 import time
+
 # Function to check SPF record
 def check_spf(domain):
     print(f"[*] Checking SPF for {domain}")
