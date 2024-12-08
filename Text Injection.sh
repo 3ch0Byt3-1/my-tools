@@ -6,7 +6,6 @@ read -p "Enter the target URL (e.g., https://example.com): " url
 read -p "Enter the parameter name to test (e.g., message): " param
 
 read -p "Enter the payload to inject (e.g., TestInjection): " payload
-
 # Construct the full URL with the parameter and payload
 full_url="${url}?${param}=${payload}"
 echo "Testing URL: $full_url"
