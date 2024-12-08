@@ -1,5 +1,4 @@
 #!/bin/bash
-
 shodan_key="R8C45zz370Hvp0prryFmF3bED2AZbZE8"
 virustotal_key="ae781046ae89ddad6cc80608ad71b9995aecd953bf96ce3de12391529d36f78d"
 securitytrails_key="sY2Cq8MTA4BwN7diurC6VM5fpwjyG1DL"
@@ -7,6 +6,7 @@ whois_key="at_pF77rN8RmJJKFU2We1l7rqzlD6h7W"
 ssl_labs_api="https://api.ssllabs.com/api/v3/analyze?host="
 nvd_api_key="177e0f5f-2c4c-4561-9316-5be2fc277e8c"  # Your NVD API Key
 # User input for target domain or IP
+
 echo "Enter the target domain or IP:"
 read target
 echo "Choose a test:"
@@ -62,7 +62,6 @@ CVE_LIST=(
 )
 
 NVD_API="https://api.nvd.nist.gov/vuln/detail/"
-
 # Function to check CVE details from the NVD API
 check_cve_nvd() {
     cve=$1
