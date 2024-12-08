@@ -10,7 +10,6 @@ read -p "Enter the path to your XSS payload wordlist (e.g., xss_wordlist.txt): "
 echo "[+] Running subdomain enumeration on $website..."
 subfinder -d "$website" | tee sub1.txt
 echo "Subdomains saved to sub1.txt"
-#--------------------------------------------------------------------
 # Step 3: Run SQLMap on each subdomain, display, and save output to sql.txt
 echo "[+] Testing SQL Injection on subdomains from sub1.txt..."
 while IFS= read -r domain; do
@@ -43,5 +42,4 @@ nmap -v -A sub1.txt | tee nmap.txt
 echo "Nmap results saved to nmap.txt"
 
 #--------------------------------------------------------------------
-
 echo "All tasks completed."
