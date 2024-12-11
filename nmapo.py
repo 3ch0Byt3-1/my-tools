@@ -7,7 +7,6 @@ from scapy.all import IP, ICMP, sr1
 from queue import Queue
 from datetime import datetime
 import json
-
 queue = Queue()
 open_ports = []
 vulnerabilities = []
