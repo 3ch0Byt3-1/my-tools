@@ -12,7 +12,6 @@ echo "Testing URL: $full_url"
 
 # Send a GET request to the URL
 response=$(curl -s "$full_url")
-
 # Check if the payload appears in the response
 if echo "$response" | grep -q "$payload"; then
     echo "Potential Text Injection Vulnerability Found!"
