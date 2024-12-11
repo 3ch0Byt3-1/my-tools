@@ -1,7 +1,6 @@
 #!/bin/bash
 # Prompt the user for a website
 read -p "Enter the website URL (e.g., bytecapsule.io): " website
-
 # Resolve the domain to an IP address using dig
 ip_address=$(dig +short "$website" | head -n 1)
 
