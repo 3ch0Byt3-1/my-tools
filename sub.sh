@@ -10,3 +10,4 @@ curl "https://api.securitytrails.com/v1/domain/$domain/subdomains" \
 -H "apikey: sY2Cq8MTA4BwN7diurC6VM5fpwjyG1DL" | \
 jq -r ".subdomains[] + \".$domain\""
 
+#--------------------------------------------------------------------
