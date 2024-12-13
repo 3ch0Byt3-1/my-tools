@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#--------------------------------------------------------------------
 read -p "Enter the HTTPS website URL (e.g., https://example.com): " url
 #--------------------------------------------------------------------
 echo "Scanning $url for mixed content..."
