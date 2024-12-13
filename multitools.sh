@@ -6,7 +6,7 @@ whois_key="at_pF77rN8RmJJKFU2We1l7rqzlD6h7W"
 ssl_labs_api="https://api.ssllabs.com/api/v3/analyze?host="
 nvd_api_key="177e0f5f-2c4c-4561-9316-5be2fc277e8c"  # Your NVD API Key
 # User input for target domain or IP
-
+#--------------------------------------------------------------------
 echo "Enter the target domain or IP:"
 read target
 echo "Choose a test:"
