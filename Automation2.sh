@@ -1,7 +1,7 @@
 #!/bin/bash
 #--------------------------------------------------------------------
 # Define the target URL
-TARGET_URL="https://bytecapsule.io"
+TARGET_URL="https://example.com"
 #--------------------------------------------------------------------
 # Wordlist and filenames
 USERLIST="user.txt"
