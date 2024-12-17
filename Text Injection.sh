@@ -1,4 +1,6 @@
 #!/bin/bash
+------
+
 
 # Prompt the user for the target URL
 read -p "Enter the target URL (e.g., https://example.com): " url
