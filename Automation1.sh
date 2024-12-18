@@ -5,7 +5,6 @@
 
 
 
-
 # Get the website domain as input
 read -p "Enter the website URL (e.g., example.com): " website
 #--------------------------------------------------------------------
